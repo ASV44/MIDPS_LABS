@@ -1,2 +1,5 @@
+import datetime
 
-print('Initial Python Hello World!')
+now = datetime.datetime.now()
+
+print('Python Hello World at ',now,'!')
