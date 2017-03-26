@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Initial C Hello World\n");
-
+	printf("C Hello World, without date and time");
+	printf("\n");
 	return	0;
 }
