@@ -14,3 +14,45 @@ Having the repo for LAB #1, with command `git checkout -b "branch_name"` I creat
 
 - ## Setting a branch to track a remote origin
 Using command `git branch -u remote/branch_name` I set branch python to track remote origin in this way.
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/track_origin.png)
+
+- ## Reseting a branch to previous commit
+I used 2 methods in order to reset a branch to previous commit
+- `git revert`
+- `git reset`
+
+The difference is that `git reset` remove commit from history but `git revert` creates a patch which cancel all changes of this commit but commit is saved in history of commits.
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/reset_branch.png)
+
+- ## Merging 2 branches and Solving conflicts
+Merging branches is trivial action in git, it is perfomed by `git merge 'branche_name'` command.
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/merge.png)
+
+And only issues what can appear with it are conflicts when the same lines are modified multiple times.
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/conflict.png)
+
+We solve conflicts by erasing non relevant code.
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/solving_conflict.png)
+
+- ## Creating pull request
+
+I forked repo with laboratory requirements and added some sample project of Hello World programs in GO, Swift, D languages. After this I generated a pull request of this changes which can be seen in `pull requests` of lab requirements repo.
+
+- ## GIT cherry-pick
+I used `git cherry-pick` in order to add some specific commits from one branch to another, In my opinion it is very useful toll which gives you posibilite to manage merging of changes very efficient, I didn't know about it until this laboratory work, but in future I will use, especially at hackathons.
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/cherry_pick1.png)
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/cherry_pick2.png)
+
+- ## GIT rebase
+
+At beging of laboratory work I had an issue related to the fact what I made some mistakes when I created the tree of branches, and I didn't can merge 2 branches because they had the same commits. I needed to delete some commits from one branch and I was searching more when half of hour before I found solution how to make this with rebase, in this way I first use the `git rebase` command.
+
+Having the log of commits it is possible to select which commit you want to delete
+
+![alt tag](https://raw.githubusercontent.com/ASV44/MIDPS_LABS/master/LAB1/images/rebase1.png)
+
