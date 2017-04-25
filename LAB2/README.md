@@ -25,8 +25,10 @@ string Input / Output. In this class I have provided function `getExpressionValu
 
 `Swift` language provides a special class `NSExpression` which allow you to analyse and to eval Strings and functions. I have
 decide to not reinvent bicycle and to use this implemented tool. In this way by creating of new object of `NSExpression` type
-which takes as parameter in constructor String with math expression, and accessing method `expressionValue()` we get calculated
-value of math expression which is returned to GUI module.
+which takes as parameter in constructor String with math expression, and accessing method `expressionValue()` we get calculated value of math expression which is returned to GUI module.
+
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.46.04.png) 
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.46.53.png)
 
 Intersting fact is that using this method of evaluating String with mathematical expression the output of `7 / 2` is `3` which
 in terms of Natural Human Logic isn't right, but is absolutely right in terms of Computer Scientist Logic, because devision of
@@ -38,10 +40,10 @@ the right value of calculatio in terms of Natural Human Logic.
 - ## Implementation of functional calculating
 
 In our calculator we have provided calculation of some operations which in fact are functions, such as sin, cos, sqrt, and 
-`NSExpression` can calculate directly not all of them. For this `NSExpression` provides evalution of function which are present
-in code. In order to keep integrity of String from GUI module with math expression and to eval directly but not on parts, I 
-have provided a function which replaces substring of functional calculation ,which can not be calculated directly, with string 
-of value of evaluating functions wich perform related calculation, such as trigonometric functions.
+`NSExpression` can calculate directly not all of them. For this `NSExpression` provides evalution of function which are present in code. In order to keep integrity of String from GUI module with math expression and to eval directly but not on parts, I have provided a function which replaces substring of functional calculation ,which can not be calculated directly, with string of value of evaluating functions wich perform related calculation, such as trigonometric functions.
+
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.51.03.png)
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.53.01.png) 
 
 Evaluating of functions, with `NSExpression`, presented in your code needs another aproach in comparison with evaluating 
 Strings. this is why my Buissnes Logic module is not as simple as you think.
@@ -51,8 +53,12 @@ Strings. this is why my Buissnes Logic module is not as simple as you think.
 Also I have worked a little bit with GUI creating graph plots, for this I have used `CorePlot` library, and in order to manage
 plot window and graph I have provided `GraphController` class, which manage all process of plotting.
 
-`GraphController` class manage generation of data for ploting also set graph style and dimension, axis position, and other stuff
-which for future enhancements of our calculator gives posibility of deep graph customization.
+`GraphController` class manage generation of data for ploting also set graph style and dimension, axis position, and other stuff which for future enhancements of our calculator gives posibility of deep graph customization.
+
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.55.58.png)
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.56.07.png)
+
+![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB2/screens/Screen%20Shot%202017-04-26%20at%2001.54.01.png)
 
 - ## IDE used features
 
