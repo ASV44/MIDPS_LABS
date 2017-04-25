@@ -63,5 +63,8 @@ plot window and graph I have provided `GraphController` class, which manage all 
 - ## IDE used features
 
 Working on this project we used [common repo](https://github.com/strdr4605/Calculator-OSX), with 2 branches, which was direct
-"connected" to IDE, which allows us to commit and push to repo direct from IDE, also we periodically merge `master` with  `logic`
-branches and solve conflicts also directly in IDE.
+"connected" to IDE, which allows us to commit and push to repo direct from IDE, also we periodically merge `master` with  `logic` branches and solve conflicts also directly in IDE.
+
+# Conclusion
+
+This laboratory work, gives better understanding about development of Desktop app and integrated IDE tools which allow you to optimize your work, and personal for me this was a challenge to develop app almoast without examples, only with some documentation. I have dicovered a lot of new things related to `Swift` and Mac OS X desktop development, and I have understand that `Swift` development is easy and intersting.
