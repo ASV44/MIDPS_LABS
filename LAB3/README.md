@@ -17,17 +17,21 @@ At this project is used translation API from Yandex(because it is the only not c
 
 After database is updated, the new word in inserted in list of translated words, in order to provide this manipulation of communication with server and database are used a lot of classes with specific methods for every operation. For example `Retrofit` library needs to implement some custome interfaces and also custom class which represent object which is returned from server, database also used custom class for representing object from database tables.
 
-In order to manage pop-up notification with out using connection to `google cloud` is used `Service` class from Android SDK, which provides some work remote from base app, this means that when app is closed `Service` will still running and working.
+In order to manage pop-up notification with out using connection to `google cloud` is used `Service` class from Android SDK, which provides some work remote from base app, this means that when app is closed, `Service` will still running and working. Notification is managed by simple calling standart function from Android SDK which creates and returns to OS notification with specific text.
 
-In this way user recive notification in specific period of time even if app is closed, with outh beibg connected to network. Notification represents some word from current selected list of languages, in this way user have possibility to interact with new words when he/she is doing something else
+In this way user recive notification in specific period of time even if app is closed, with outh being connected to network. Notification represents some word from current selected list of languages, in this way user have possibility to interact with new words when he/she is doing something else
 
 ![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB3/screens/Screen%20Shot%202017-04-26%20at%2004.19.57.png) 
 
-Also in this project I work a lot of with UI, even if it look simple it have taken a lot of time to implement View and several menus, and different actions at buttons pressed at simple and long.
+Also in this project I work a lot of with UI, even if it look simple it have taken a lot of time to implement Views and several menus, and different actions at buttons pressed at simple and long.
 
 ![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB3/screens/Screen%20Shot%202017-04-26%20at%2004.18.06.png) 
 ![alt tag](https://github.com/ASV44/MIDPS_LABS/blob/master/LAB3/screens/Screen%20Shot%202017-04-26%20at%2004.18.45.png) 
 
 # IDE used features
 
-In this project tried to use as many as posiblle features of Android Studio, and I have used such features like VCS, and all what is refers to it, pull, push, commit, merge, solving conflicts, also I have used debugger and debugging console.
+In this project I tried to use as many as posiblle features of Android Studio, and I have used such features like VCS, and all what is refers to it, pull, push, commit, merge, solving conflicts, also I have used debugger and debugging console.
+
+# Conclusion
+
+During this laboratory work debuging procces was very simple and reason of this are debuging tools implemented in IDE. Because this project use a lot of separate modules like data transfer, database, android services and others, simple and easy debugging is very important, and this is laboratory work gives better understanding of using and importance of IDE features.
