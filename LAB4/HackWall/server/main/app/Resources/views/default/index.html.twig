@@ -1,0 +1,23 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <button id="refresh-button"> Refresh </button>
+    </div>
+
+    <div id = "expected-application">
+        <iframe height="400" width=1000" src="http://localhost:8001"></iframe>
+    </div>
+    <div id="actual-application" >
+        <iframe height="400" width=1000" src="http://localhost:8002"></iframe>
+    </div>
+</body>
+
+<script>
+    $("#refresh-button").on('click', function () {
+        var $thisIframe = $("#actual-application").find('iframe');
+        $thisIframe.attr('src', $thisIframe.attr('src'));
+    })
+</script>

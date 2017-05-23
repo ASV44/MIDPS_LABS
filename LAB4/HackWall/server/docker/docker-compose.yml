@@ -1,0 +1,68 @@
+version: "2"
+
+services:
+    main:
+        container_name: main
+        image: phpmentors/symfony-app
+        working_dir: /var/www/html
+        ports:
+            - localhost:80:80
+        volumes:
+            - /var/www/HackWall/main:/var/www/html
+
+
+
+    expected_result:
+        container_name: expected_result
+        image: phpmentors/symfony-app
+        working_dir: /var/www/html
+        ports:
+            - localhost:81:81
+
+    provided_result:
+        container_name: provided_result
+        image: phpmentors/symfony-app
+        working_dir: /var/www/html
+        ports:
+            - localhost:82:82
+
+    db:
+        container_name: db
+        image: mysql/mysql-server:5.5
+        restart: unless-stopped
+        working_dir: /database/scripts
+        ports:
+            - localhost:5506:3306
+        environment:
+            MYSQL_DATABASE: hackwall
+            MYSQL_ROOT_PASSWORD: root
+
+#
+#    web_bo:
+#        container_name: p5sn_admin
+#        image: p5sn_image_dev:5.6.28
+#        depends_on:
+#            - web_fo
+#        restart: unless-stopped
+#        working_dir: /var/www/html
+#        ports:
+#            - "${BO_IP}:80:80"
+#        environment:
+#            - PHP_IDE_CONFIG=serverName=p5sn-admin.dev
+#            - XDEBUG_CONFIG=idekey=PHPSTORM
+#        extra_hosts:
+#            - "${BO_HOST1}:${BO_IP}"
+#            - "${BO_HOST2}:${BO_IP}"
+#    db:
+#        container_name: p5sn_db
+#        image: mysql/mysql-server:5.5
+#        restart: unless-stopped
+#        working_dir: /database/scripts
+#        ports:
+#            - "${DB_IP}:5506:3306"
+#        volumes:
+#            - ./mysql/:/database/scripts
+#            - ./mysql/:/database/backups
+#        environment:
+#            MYSQL_DATABASE: p5sn_dev
+#            MYSQL_ROOT_PASSWORD: toor

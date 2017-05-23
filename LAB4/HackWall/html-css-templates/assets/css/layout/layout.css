@@ -1,0 +1,34 @@
+#header {
+  background-color: blue;
+  top: 0;
+  height: 50px;
+  width: auto; }
+
+#main {
+  flex: 1;
+  display: flex;
+  flex-flow: row; }
+
+#sidebar1 {
+  flex-basis: 20%;
+  order: 1;
+  background-color: yellow; }
+
+#sidebar2 {
+  flex-basis: 20%;
+  order: 3;
+  background-color: yellow; }
+
+#content {
+  background-color: green;
+  flex-basis: 60%;
+  order: 2; }
+
+#footer {
+  background-color: blue;
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: 50px;
+  clear: left;
+  width: 100%; }
